@@ -7,13 +7,16 @@ import BlogEntry from './BlogEntry';
 export default function BlogList() {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields:frontmatter___date, order:DESC }) {
         edges {
           node {
             id
             frontmatter {
               title
               date(formatString: "MMMM D, YYYY")
+            }
+            fields {
+              slug
             }
             excerpt
           }
@@ -22,13 +25,12 @@ export default function BlogList() {
     }
   `);
 
-  console.log(data);
-
   return (
     <div>
       {data.allMarkdownRemark.edges.map(entry => (
         <BlogEntry 
           key={entry.node.id}
+          slug={entry.node.fields.slug}
           title={entry.node.frontmatter.title}
           date={entry.node.frontmatter.date}
           excerpt={entry.node.excerpt} />
