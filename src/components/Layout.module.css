@@ -3,18 +3,23 @@
   background: url('/coffee.jpg');
   background-size: cover;
   color: #FFFFFF;
+  font-size: 1.2rem;
 }
 
 #header #inner {
   background: rgba(119, 79, 56, 0.85);
   padding: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 #header h1 {
   margin: 0;
+  flex-grow: 1;
+  font-size: 2rem;
 }
 
-#header h1 a {
+#header a {
   color: #FFFFFF;
   text-decoration: none;
 }
