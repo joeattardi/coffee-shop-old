@@ -1,4 +1,5 @@
 ---
+contentKey: blog
 title: Coffee Raffle
 date: 2020-03-07T02:47:36.478Z
 ---

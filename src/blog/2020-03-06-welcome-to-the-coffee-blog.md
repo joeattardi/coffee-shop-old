@@ -1,4 +1,5 @@
 ---
+contentKey: blog
 title: Welcome to the Coffee Blog
 date: 2020-03-06T02:56:10.463Z
 ---

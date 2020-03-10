@@ -1,4 +1,5 @@
 ---
+contentKey: blog
 title: Filler Blog 6
 date: 2020-03-08T17:59:51.881Z
 ---

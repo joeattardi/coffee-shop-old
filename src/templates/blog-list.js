@@ -40,10 +40,10 @@ export default function BlogListTemplate({ data, pageContext }) {
 export const query = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {contentKey: {eq: "blog"}}}
       limit: $limit
-      skip: $skip
-    ) {
+      skip: $skip) {
       edges {
         node {
           id
