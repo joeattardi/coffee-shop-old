@@ -24,7 +24,6 @@ collections:
         label: "Index Page"
         name: "index-page"
         fields:
-          - { label: "Content Key", name: "contentKey", widget: "hidden", default: "index-page" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Image 1", name: "image1", widget: "image" }
           - { label: "Image 2", name: "image2", widget: "image" }
