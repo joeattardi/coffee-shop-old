@@ -28,3 +28,19 @@ collections:
           - { label: "Image 1", name: "image1", widget: "image" }
           - { label: "Image 2", name: "image2", widget: "image" }
           - { label: "Image 3", name: "image3", widget: "image" }
+      - file: "src/pageData/menu.md"
+        label: "Menu"
+        name: "menu"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
