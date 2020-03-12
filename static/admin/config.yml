@@ -34,11 +34,13 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Categories"
+            label_singular: "Category"
             name: "categories"
             widget: "list"
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - label: "Items"
+                label_singular: "Item"
                 name: "items"
                 widget: "list"
                 fields:
